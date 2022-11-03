@@ -1,26 +1,149 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+:root {
+
+  --main-color:linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  --main-transition-duration:  0.3s;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+  .pos-h2 {
+    font-size: 30px;
+    margin-right: 494px;
   }
-  body {
+  .page-title {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 800;
+    font-size: 50px;
+    margin-top: 80px;
+    margin-left: -50px;
+  color:rgb(8, 163, 246);
+ 
+  }
+  span {
+    background-color: #0093E9;
+    background-image: var(--main-color);
     color: white;
-    background: black;
+    border-radius: 5px;
+    padding: -1px;
   }
+
+  body {
+    background: #f2f2f2;
+    color: #333;
+    font-family: "Nunito";
+  }
+
+  .content-layout {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .bg {
+
+    /*background-color: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
+    clip-path: polygon(61% 0, 100% 0%, 100% 100%, 32% 100%);
+   background-color: #00DBDE;
+   background-image: linear-gradient(140deg, #0093E9 0%, #80D0C7 100%);
+    
+   height: 80vh;
+   width: 102%;
+   position: absolute;
+   top: 0px;
+   right: -52px;
+   z-index: -1;
+   }
+
+
+  nav {
+
+  
+    margin: -25px 5px 0px;
+    padding: 22px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  nav a {
+    margin-left: 40px;
+    padding-left: 10px;
+    margin-bottom: 26px;
+    color: #333;
+    text-decoration: none;
+
+  }
+
+  nav a:hover {
+
+    border-top:1px solid rgb(8, 163, 246);
+  }
+  nav a:focus {
+    font-weight: bold;
+  }
+
+
+  .login {
+    padding: 8px;
+    background-color: rgb(8, 163, 246);
+    color: white;
+    border: #f2f2f2;
+    border-radius: 15px;
+
+  }
+
+  .login:hover {
+    border-top: none;
+    background-color: white;
+    color:rgb(8, 163, 246);
+  }
+
+  footer {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    margin-top: 370px;
+    color: #777;
+
+  }
+
+.btn-contact{
+  margin-top: 70px;
+  width: 150px;
+  height: 50px;
+  padding: 15px;
+  background-color: rgb(8, 163, 246);
+  color: white;
+  border: #f2f2f2;
+  border-radius: 3px 15px 2px 15px;
+  font-size: 16px;
 }
+
+.btn-contact:hover{
+ color:  rgb(8, 163, 246);;
+ background: #23424b;
+  border-radius: 15px 3px 15px 2px;
+  /* -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px; */
+  position: relative;
+  z-index: 1;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  overflow: hidden;
+
+}
+  .not-found {
+    text-align: center;
+
+  }
+
+
+  .not-found a {
+    color: #4979ff;
+    text-decoration: underline;
+  }
