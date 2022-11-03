@@ -9,6 +9,8 @@
   .pos-h2 {
     font-size: 30px;
     margin-right: 494px;
+    text-transform:capitalize;
+    letter-spacing: 3px;
   }
   .page-title {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -16,8 +18,11 @@
     font-size: 50px;
     margin-top: 80px;
     margin-left: -50px;
-  color:rgb(8, 163, 246);
- 
+    color: var(--main-color);
+     padding: -1px;
+     text-transform:capitalize;
+     letter-spacing: 1px;
+     
   }
   span {
     background-color: #0093E9;
@@ -37,7 +42,6 @@
     max-width: 960px;
     margin: 0 auto;
   }
-
   .bg {
 
     /*background-color: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);*/
@@ -56,13 +60,12 @@
 
   nav {
 
-  
     margin: -25px 5px 0px;
     padding: 22px 10px 0px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+
   }
 
   nav a {
@@ -93,9 +96,18 @@
   }
 
   .login:hover {
-    border-top: none;
-    background-color: white;
-    color:rgb(8, 163, 246);
+    border: none;
+    color:  rgb(8, 163, 246);;
+    background: #23424b;
+     position: relative;
+     z-index: 1;
+     transition: all .5s ease-in-out;
+     -webkit-transition: all .5s ease-in-out;
+     -moz-transition: all .5s ease-in-out;
+     -ms-transition: all .5s ease-in-out;
+     -o-transition: all .5s ease-in-out;
+     overflow: hidden;
+   
   }
 
   footer {
@@ -106,8 +118,9 @@
     color: #777;
 
   }
-
+/* 
 .btn-contact{
+  position: relative;
   margin-top: 70px;
   width: 150px;
   height: 50px;
@@ -117,16 +130,31 @@
   border: #f2f2f2;
   border-radius: 3px 15px 2px 15px;
   font-size: 16px;
+} */
+
+.btn-contact{
+  position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 15px 35px;
+    display: inline-block;
+    background: rgb(8, 163, 246);;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: none;
+    margin-top: 35px;
 }
+
 
 .btn-contact:hover{
  color:  rgb(8, 163, 246);;
  background: #23424b;
   border-radius: 15px 3px 15px 2px;
-  /* -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px; */
   position: relative;
   z-index: 1;
   transition: all .5s ease-in-out;
@@ -136,7 +164,52 @@
   -o-transition: all .5s ease-in-out;
   overflow: hidden;
 
+} 
+
+ 
+/* 
+.btn-contact:hover {
+  position: absolute;
+  content: "";
+  background: hsla(0,0%,100%,.502);
+  width: 50px;
+  height: 155px;
+  left: -75px;
+  top: -50px;
+  opacity: .2;
+  z-index: 10;
+  -webkit-transform: rotate(35deg);
+  -webkit-transition: all 1s cubic-bezier(.19,1,.22,1);
+ } */
+
+
+.image {
+  position: relative;
+margin-top: 140px;
+min-height: calc(60vh - 10px); 
+display: flex;
+align-items: center;
+margin-left: 660px;
+width: 520px;
+animation: up-and-down 8s linear infinite;
 }
+
+/*start animation*/
+@keyframes up-and-down {
+
+0%,
+100% {
+
+  top: 0;
+}
+
+50% {
+  top: -50px;
+}
+}
+
+/*end animation*/
+
   .not-found {
     text-align: center;
 
